@@ -1,0 +1,119 @@
+h4{
+    font-size: 0.9rem;
+}
+.body-tienda{
+    header{
+        position: relative;
+    }
+    .fa-shopping-cart{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 2rem;
+    &:hover{
+        cursor: pointer;
+        color: $rosa;
+        }   
+    }
+    main h3{
+        margin-top: 1rem;
+        color: $rosa;
+        text-align: center;
+        font-family:$fuente3;
+        font-size: 1.7rem;        
+        #filtros{
+            color: whitesmoke;
+        }
+        span{
+            &:hover{
+                color: whitesmoke;
+                cursor: pointer;
+            }
+        }
+    }
+    .fondo-tienda{
+        padding: 2rem 0;   
+        background-color: $casiNegro;    
+        margin-top: 2rem; 
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        article{
+            color: white; 
+            font-size: 1rem;    
+            display: grid;       
+            align-items: center;  
+            justify-items: center; 
+            grid-gap: 0.5rem;  
+            &:hover button{
+                transform: scale(1.1);
+            } 
+        }     
+    }
+}
+
+.descripcion{
+    text-align: center;
+}
+.precio{
+    color: $rosa;
+}
+.fondo-tienda button{    
+    padding: 0.3rem;
+}
+#talle{
+    background-color: $casiNegro;
+    border-color: $rosa;
+    color: white;
+}
+.caja-cd{
+    position: relative;
+    font-size: 0.8rem;
+    & > div{
+        padding: 0.5rem 0;
+        border-radius: 2%;
+        display: none;
+        position: absolute;
+        right: -13rem;
+        background-color: rgb(14, 13, 13);
+        border: 1px solid white;
+        color: white;
+        z-index: 100;
+        width: 100%;
+    }  
+    & > div.caja4{
+        left: -13rem;
+        right: 5rem;
+    }
+    &:hover > div{
+        display: block;
+    } 
+    p{
+        font-weight: 500;
+        padding-left: 1.4rem;
+        color: wheat;
+    } 
+    div ol{
+        margin-block-end: 0;
+        margin-right: 0.8rem;
+    }
+}
+
+.footer-tienda{
+    font-size: 1rem;
+    display: block;
+    padding-left: 2rem;   
+    h4{
+        margin-bottom: 0.8rem;
+    }
+    ul{
+        list-style: none;   
+        display: flex;
+        padding-left: 0;
+    }
+    i{
+        margin-right: 0.5rem;
+        font-size: 2rem;
+        padding: 0;
+    }
+}

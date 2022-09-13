@@ -1,0 +1,7 @@
+@mixin propiedadesTextoYcaja ($margin,$font-family,$margin-block-start,$margin-block-end,$font-size){
+    margin: $margin;
+    font-family: $font-family;
+    margin-block-start: $margin-block-start;
+    margin-block-end: $margin-block-end;
+    font-size: $font-size;
+}

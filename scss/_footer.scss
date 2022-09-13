@@ -1,0 +1,35 @@
+footer{
+    background-color: $casiNegro;
+}
+.boton{
+    padding: 0.4rem;
+    border-color:$rosa;
+    background-color: $rosa;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.80rem;
+    font-family: $fuente2;
+    &:hover{
+        border-color: white;  
+        color: white;  
+        background-color: black;
+        transition: 300ms linear;
+    }
+}
+
+input,textarea{
+    color: white;
+    padding: 0.3rem;
+    font-family: 'Inconsolata', monospace;
+    background-color: $casiNegro;
+    &:focus{
+        outline: 0;
+        border-color: $rosa;
+        background-color: rgb(22, 20, 20);
+    }
+}
+p.text-muted{
+    text-align: center;
+    font-size: 0.8rem;
+}

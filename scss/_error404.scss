@@ -1,0 +1,44 @@
+#error{   
+    height: 90vh;   
+    section{
+        h2{
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;   
+            font-size: 3rem;
+            font-family: $fuente3;
+            color: $rosa;
+        }
+        div{
+            position: relative;
+            h1{                
+                font-size: 9rem;
+                line-height: 1.5;
+                color: rgba(white, 0.3);
+            }
+            h2{
+                position: absolute;
+                top: 35%;
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;    
+                font-family: $fuente3;
+                color: $rosa;
+            }
+        }
+        h3{
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;
+            a{
+            color: white;
+            text-decoration: none;
+            font-family: $fuente2;
+            &:hover{
+            color: $rosa;
+            transition: 300ms linear;
+                }
+            }
+        }
+    }
+}

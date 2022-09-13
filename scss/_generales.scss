@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $fuente2;
+    background-color: #010101;
+    color: white;  
+}
+
+h1{
+    @include propiedadesTextoYcaja (0,$fuente1,0,0,3rem);   
+    text-align: center;    
+}
+h2{
+    @include propiedadesTextoYcaja (0,$fuente1,0,0,2.5rem)      
+}
+
+h3{
+    @include propiedadesTextoYcaja (0,$fuente1,0,0,2rem)
+    
+}
+h4,p,ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.fuente-terciaria{
+    font-family: $fuente3;  
+    color:$rosa;  
+   
+}

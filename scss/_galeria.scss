@@ -1,0 +1,18 @@
+
+$animation-delays:500ms,700ms,900ms,1100ms,1300ms,1500ms,1700ms,1900ms,2100ms,2300ms,2500ms,2700ms;
+@each $delay in $animation-delays{
+    .slideRight-#{$delay} {
+        animation-name: slideRight;
+        animation-duration: 700ms;	
+        animation-delay: $delay;
+        animation-timing-function: ease-in-out;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+}
+div[class*="slideRight"]{
+    padding: 0.3rem;
+    &:hover img{
+        filter: brightness(150%);  
+    }
+ }

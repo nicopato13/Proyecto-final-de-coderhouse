@@ -1,0 +1,106 @@
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+#portada{
+    height: 100vh; 
+}
+#tituloPrincipal
+{  
+    color: $rosa;
+    text-align: center;     
+    font-family: $fuente1;
+    font-size: 4rem;    
+    line-height: 1.3; 
+}
+.contenido-principal{
+    h3{
+        font-family: 'Permanent Marker', cursive;  
+        color:$rosa;  
+    }
+    ul li{
+        list-style: none;
+        text-align: center;    
+        border-bottom: 2px solid $rosa;   
+        a{
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: $rosa;
+            }
+        }
+    }
+}
+#cd{
+    width: 20rem;     
+    transition: 2s;  
+    box-shadow: 7px 7px 25px 0px rgb(54,54,54);
+    animation: movimiento 3s ease-in-out infinite;
+}
+.seccion-noticias{
+    margin-top: 5rem;
+    article{
+        background-color: $casiNegro;
+    }
+    aside{
+        position: relative;
+        &:hover{
+            h3{
+                a{  color: black;}
+            }
+        }
+        h3{
+            text-align: center;  
+            position: absolute;
+            bottom: 1rem;
+            color: #e52f82;
+            font-size: 1.2rem;
+            left: 3.3rem;
+            a{
+                color: #e52f82;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.noticias h3{ 
+    padding: 0.5rem 0;
+    margin-block-start: 0;
+    margin-block-end: 0; 
+    background-color: $casiNegro;   
+    color: white;
+    text-align: center;
+}
+.fecha-noticia{
+    background-color: $celeste;
+    text-align: center;    
+    font-size: 0.75rem;
+    font-weight: bolder;
+    padding: 0.3rem;
+    margin-block-end: 0;   
+    color: black;
+}
+.cuerpo-noticia{  
+    font-size: 0.7rem;  
+    line-height: 1.5;      
+    font-size: 0.85rem; 
+    padding-bottom: 1rem;  
+}
+#contenedorBanda{
+    margin-top: 5rem;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    position: relative;    
+}
+#integrantes{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 1rem;
+}

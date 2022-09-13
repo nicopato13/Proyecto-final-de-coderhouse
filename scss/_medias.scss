@@ -1,0 +1,123 @@
+
+/* medias generales */
+@media (max-width:366px){
+    h1{
+        font-size: 2.2rem;
+    }
+}
+/* medias para index */
+@media (min-width:240px) and (max-width:534px){
+    h2{
+        font-size: 1.8rem;
+    }
+    #tituloPrincipal{
+        font-size: 2rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (max-width:766px){  
+    body.index.container-fluid{
+        padding-right: 0px;
+        padding-left: 0px;
+    }  
+    .caja-cd:hover > div{    
+        display: none;        
+    } 
+    #portada{
+        height: auto;
+        background-image: url(../img/humo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 3rem 0;
+       
+    }
+    #tituloPrincipal{
+        margin: 3rem 0;
+        color: black;
+    } 
+    .seccion-noticias{
+        padding-right: 15px;
+        padding-left: 15px;
+    }  
+    footer.index{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width:767px) and (max-width:991px){
+    .caja-cd > div{        
+    right: -10.5rem;    
+    }
+    .caja-cd > div.caja4{
+        left: -10.5rem;
+        right: 5rem;
+    }
+}
+@media (min-width:768px) and (max-width:815px){
+    .seccion-noticias aside h3{
+        font-size: 1rem;
+        left: 2rem;
+    }
+}
+@media (min-width:816px) and (max-width:1060px){
+    .seccion-noticias aside h3{
+        font-size: 1.2rem;
+        left: 3rem;
+       
+    }
+}
+/* medias para fechas */
+@media (max-width:514px){
+    #fechas p{
+        text-align: center;
+        span,strong{
+            position: static;
+        }
+    }
+}
+/* media para musica */
+@media (max-width:694px){
+    #musica{
+        margin: auto;
+    }
+}
+@media (min-width:992px) and (max-width:1229px){
+    #cara1{
+        width: 30%;
+    }
+    #cara2{
+        width: 30%;
+    }
+    #cara3{
+        width: 30%;
+    }
+}
+// medias para tienda
+@media (min-width:230px) and (max-width:438px){
+    .body-tienda .fondo-tienda{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+@media (min-width:439px) and (max-width:768px){
+    .body-tienda .fondo-tienda{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+}
+/* medias para error404 */
+@media (min-width:200px) and (max-width:768px){
+    #error{
+       section div
+       {
+           position: static;
+           h2{
+               position: static;
+           }
+           h1{
+            font-size: 3.7rem;
+        }
+       } 
+    }
+}

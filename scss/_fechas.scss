@@ -1,0 +1,61 @@
+.chica{
+    font-size: 2rem;
+}
+
+h2.fuente-terciaria.chica{
+    background-color:$casiNegro ;
+    width: 65%;
+    padding: 0.7rem;
+    text-align: center;
+    box-shadow: 0px 7px 14px 0px rgb(54,54,54);
+}
+
+#fechas{
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #ffff00;
+    box-shadow: 0px 7px 14px 0px rgb(54,54,54);
+    position: relative;
+    p{
+        margin: 0;
+        color: black;  
+        position: relative;
+        padding: 0.7rem; 
+        &:hover{
+            background-color: $casiNegro;
+            color: white;
+        }
+        span{
+            position: absolute;
+            right: 40%;   
+        }
+        strong{
+            position: absolute;
+            right: 1rem;
+            cursor: pointer;
+            &:hover{
+                color: $rosa
+            }
+        }
+    }
+}
+.fechas{
+    position: relative;
+    z-index: 10;
+}
+#humo-derecha{
+    z-index: -10;    
+    animation-name: humo-derecha;
+    animation-duration: 4s; 
+    position: absolute;
+    top: 0;
+    right: -10rem;
+}
+#humo-izquierda{
+    z-index: -10;    
+    animation-name: humo-izquierda;
+    animation-duration: 4s; 
+    position: absolute;
+    top: 10rem;
+    left: -16rem;
+}

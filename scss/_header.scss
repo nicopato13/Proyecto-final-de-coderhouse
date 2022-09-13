@@ -1,0 +1,64 @@
+header {   
+    background: rgba(0, 0, 0, 0.5); 
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            color: $rosa;     
+            transition: 300ms linear;
+            text-decoration: none;
+        }
+    }
+    .seccion-activa{
+    color: $rosa;
+    }
+    nav{
+        padding: 0.3rem 0; 
+        li{
+            font-size: 1.2rem;
+            list-style: none; 
+            padding: 0 0.3rem;  
+            cursor: pointer; 
+        }
+    }
+    ul{
+        padding-left: 0;
+    }
+}
+.redes {   
+    list-style: none; 
+    li{
+        padding: 0 0.4rem; 
+        list-style: none; 
+    }
+    i{
+        color: $celeste;
+        font-size: 1.4rem; 
+        &:hover{
+            color: white;
+        }
+    }   
+}
+
+.dropdown{
+    margin-top: 0.5rem;
+}
+a.dropdown-item.seccion-activa{
+    color: $rosa;
+}
+#dropdownMenuButton{
+    background-color: $casiNegro;
+    color: $rosa;
+    border:none;
+    padding: 0.1rem 0.5rem;
+    margin-right: 0.5rem;
+}
+.dropdown-menu.show{
+    background-color: $casiNegro;
+    border-color: $rosa;
+    color: white;
+}
+.dropdown-item{
+    color: white;
+}
