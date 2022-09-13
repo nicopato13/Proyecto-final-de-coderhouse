@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="galería de fotos en conciertos de el mató a un policía motorizado">
+    <meta name="keywords" content="galería,fotos,shows,conciertos">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Inconsolata&family=Permanent+Marker&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- FontAwesome -->  
+    <script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>
+    <title>EL MATO Galería</title>
+</head>
+<body class="container-fluid">
+    <header class="d-inline-flex justify-content-start justify-content-md-center align-items-center w-100">       
+        <a href="index.html" class="d-none d-sm-block"><img src="img/logo.png" alt="Logo" title="Logo"></a>
+        <nav class="pt-2 d-none d-sm-flex">
+            <ul class="row text-center justify-content-center">
+                <li class="col-12 col-sm-2">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="fechas.html">Fechas</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="musica.html">Música</a>
+                </li>
+                <li class="col-12 col-sm-2 mr-1">
+                    <a href="#" class="seccion-activa">Galería</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="tienda.html">Tienda</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown d-flex d-sm-none">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/menu.png" alt="menu">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html">Inicio</a>
+              <a class="dropdown-item" href="fechas.html">Fechas</a>
+              <a class="dropdown-item" href="musica.html">Música</a>
+              <a class="dropdown-item seccion-activa" href="#">Galería</a>
+              <a class="dropdown-item" href="tienda.html">Tienda</a>
+            </div>
+          </div>
+        <ul class="d-flex pt-2 redes ml-auto ml-sm-0">
+            <li>
+                <a href="https://es-la.facebook.com/elmatoaunpoliciamotorizado/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/elmatoaunpoliciamotorizado/?hl=es-la" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ElMato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/5rLsN2LxYaEPLa1N7I2mPB" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC6r3CG3J2zEtJt0XabdOwug" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>       
+    </header>
+    <main class="galeria">
+        <h1 class="titulo mt-4 mb-5">GALERÍA</h1>
+        <section class="contenedor-galeria">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 slideRight-1100ms">
+              <a href="img/galeria/7-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/7-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-900ms">
+              <a href="img/galeria/1-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/1-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-700ms">
+              <a href="img/galeria/2-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/2-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-500ms">
+            <a href="img/galeria/3-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+              <img src="img/galeria/3-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+            </a>
+            </div>            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3  slideRight-1900ms"> 
+              <a href="img/galeria/10-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/10-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3  slideRight-1700ms"> 
+              <a href="img/galeria/11-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/11-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-1500ms">
+              <a href="img/galeria/5-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/5-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-1300ms">
+              <a href="img/galeria/6-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/6-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 slideRight-2700ms">
+              <a href="img/galeria/4-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/4-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-2500ms">
+              <a href="img/galeria/8-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/8-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 slideRight-2300ms">  
+              <a href="img/galeria/12-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/12-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>
+            </div> 
+            <div class="col-12 col-sm-6 col-md-3 slideRight-2100ms"> 
+              <a href="img/galeria/9-min.jpg" data-lightbox="roadtrip" data-title="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos">
+                <img src="img/galeria/9-min.jpg" alt="Recuerdo de la noche en el Estadio Malvinas Argentinas. Foto: Leandro Frutos" class="img-fluid">
+              </a>     
+            </div>
+          </div>         
+        </section>
+    </main>  
+    <footer class="row mt-5 pb-3 pt-5 index">
+      <div class="seguinos col-12 col-sm-6">
+          <div class="row justify-content-center">
+              <h3 class="p-1">SEGUINOS</h3>
+          </div>
+          <div class="row justify-content-center">
+              <p class="mt-2 p-1 text-center">Enterate de las últimas novedades</p>
+          </div>
+          <form action="#" method="POST" class="row justify-content-center">
+              <div class="col-12">
+                  <div class="row justify-content-center">
+                      <input type="email" placeholder="Ingresá tu email" id="email" required class="mt-2 mr-2">
+                      <button type="submit" class="boton mt-2">SUSCRIBIRSE</button>
+                  </div>
+                 
+              </div>
+          </form>
+          <ul class="d-flex pt-2 redes pl-2 justify-content-center mt-3">
+                  <li>
+                      <a href="https://es-la.facebook.com/elmatoaunpoliciamotorizado/" target="_blank">
+                          <i class="fab fa-facebook-square"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/elmatoaunpoliciamotorizado/?hl=es-la" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/ElMato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://open.spotify.com/artist/5rLsN2LxYaEPLa1N7I2mPB" target="_blank">
+                          <i class="fab fa-spotify"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.youtube.com/channel/UC6r3CG3J2zEtJt0XabdOwug" target="_blank">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                  </li>
+              </ul>
+      </div>
+  </div>
+      <div class="contacto col-12 col-sm-6 mt-4 mt-sm-0">
+          <div class="row justify-content-center mb-3">
+              <h3 class="pl-3">CONTACTO</h3>
+          </div>            
+          <form action="#" method="POST" class="row justify-content-center">
+              <div class="col-12 col-lg-6">
+                  <div class="row justify-content-center">
+                      <input type="email" placeholder="Nombre" id="nombre" required class="mb-2">
+                  </div>
+                      <div class="row justify-content-center">
+                          <input type="email" placeholder="Email" id="emailContacto" required class="mb-2">
+                      </div>    
+              </div>
+              <div class="col-12 col-lg-5">
+                  <div class="row justify-content-center">
+                      <textarea placeholder="Mensaje" rows="4" cols="24" id="mensaje" class="mb-2"></textarea>
+                  </div> 
+                  <div class="row justify-content-center">         
+                      <button type="submit" class="boton">ENVIAR</button>
+                  </div>  
+              </div>      
+         </form>      
+      </div>  
+      <p class="text-muted col-12 mt-4">&copy; Marina Mastropierro 2020</p>
+  </footer> 
+    <!-- lightbox -->
+    <script src="./lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+     <!--bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+  </body>
+</html>

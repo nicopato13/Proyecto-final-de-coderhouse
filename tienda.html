@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tienda oficial de el mató a un policía motorizado, venta de vinilos, remeras, cds y casetes">
+    <meta name="keywords" content="tienda,venta,comprar,vinilos,remeras,cds,casetes">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Inconsolata&family=Permanent+Marker&display=swap" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- FontAwesome -->  
+    <script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>  
+    <title>EL MATO Tienda</title>
+</head>
+<body class="body-tienda container-fluid">
+    <header class="d-inline-flex justify-content-start justify-content-md-center align-items-center w-100">       
+        <a href="index.html" class="d-none d-sm-block"><img src="img/logo.png" alt="Logo" title="Logo"></a>
+        <nav class="pt-2 d-none d-sm-flex">
+            <ul class="row text-center justify-content-center">
+                <li class="col-12 col-sm-2">
+                    <a href="index.html" >Inicio</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="fechas.html">Fechas</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="musica.html">Música</a>
+                </li>
+                <li class="col-12 col-sm-2 mr-1">
+                    <a href="galeria.html">Galería</a>
+                </li>
+                <li class="col-12 col-sm-2">
+                    <a href="#" class="seccion-activa">Tienda</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown d-flex d-sm-none">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/menu.png" alt="menu">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html">Inicio</a>
+              <a class="dropdown-item" href="fechas.html">Fechas</a>
+              <a class="dropdown-item" href="musica.html">Música</a>
+              <a class="dropdown-item" href="galeria.html">Galería</a>
+              <a class="dropdown-item seccion-activa" href="#">Tienda</a>
+            </div>
+          </div>
+        <ul class="d-flex pt-2 redes ml-auto ml-sm-0">
+            <li>
+                <a href="https://es-la.facebook.com/elmatoaunpoliciamotorizado/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/elmatoaunpoliciamotorizado/?hl=es-la" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ElMato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/5rLsN2LxYaEPLa1N7I2mPB" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC6r3CG3J2zEtJt0XabdOwug" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>  
+        <i class="fas fa-shopping-cart d-none d-lg-flex"></i>     
+    </header>
+    <main>
+        <h1 class="titulo row">
+            <div class="col-12 text-center my-4">TIENDA OFICIAL</div>
+        </h1>
+        <h3 class="row">
+            <div class="col-12">
+                <span id="filtros">Filtros </span>&nbsp
+                <span id="vinilos">Vinilos </span>&nbsp·&nbsp
+                <span id="cds">CDs </span>&nbsp·&nbsp
+                <span id="casetes">Casetes </span>&nbsp·&nbsp
+                <span id="camisetas">Camisetas</span>
+            </div>
+        </h3>
+        <section class="fondo-tienda container">           
+                <article class="remera">               
+                    <img src="img/productos/m-blanca.png" alt="remera blanca dama" class="img-fluid">
+                    <p class="descripcion">Remera dama</p>                                   
+                    <select name="talle" id="talle">
+                        <option selected disabled>Talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>               
+                </article>
+                <article class="remera">                
+                    <img src="img/productos/m-negra.png" alt="remera negra dama" class="img-fluid">
+                    <p class="descripcion">Remera dama</p>
+                    <select name="talle" id="talle">
+                        <option selected disabled>Talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="remera">               
+                    <img src="img/productos/h-negra.png" alt="remera negra hombre" class="img-fluid">
+                    <p class="descripcion">Remera hombre</p>
+                    <select name="talle" id="talle">
+                        <option selected disabled>Talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="remera">               
+                    <img src="img/productos/h-blanca.png" alt="remera blanca hombre" class="img-fluid">
+                    <p class="descripcion">Remera hombre</p>
+                    <select name="talle" id="talle">
+                        <option selected disabled>Talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>           
+                <article class="vinilo"> 
+                    <div class="caja-cd">
+                        <div>
+                            <p>LADO A</p>
+                            <ol>
+                                <li>Buscando más allá</li>
+                                <li>El perro</li>
+                                <li>Las luces - versión 2019</li>
+                                <li>La casa fantasmal</li>
+                                <li>Postales negras</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>Excálibur - versión 2019</li>
+                                <li>La noche eterna - acústico</li>
+                                <li>Madre</li>
+                                <li>El tesoro acústico</li>                           
+                            </ol>
+                        </div>
+                        <img src="img/productos/laotra-min.jpg" alt="vinilo La otra dimensión" class="img-fluid">                    
+                    </div>         
+                    <p class="descripcion">Vinilo · La otra dimensión · 2019 </p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="cd">
+                    <div class="caja-cd">
+                        <div>
+                            <ol>
+                                <li>Buscando más allá</li>
+                                <li>El perro</li>
+                                <li>Las luces - versión 2019</li>
+                                <li>La casa fantasmal</li>                            
+                                <li>Excálibur - versión 2019</li>
+                                <li>La noche eterna - acústico</li>
+                                <li>Madre</li>
+                                <li>El tesoro acústico</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/laotra-min.jpg" alt="cd La otra dimensión" class="img-fluid">
+                    </div>              
+                    <p class="descripcion">CD · La otra dimensión · 2019 </p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="casete">
+                    <div class="caja-cd">
+                        <div>
+                            <p>LADO A</p>
+                            <ol>
+                                <li>Buscando más allá</li>
+                                <li>El perro</li>
+                                <li>Las luces - versión 2019</li>
+                                <li>La casa fantasmal</li>
+                                <li>Postales negras</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>Excálibur - versión 2019</li>
+                                <li>La noche eterna - acústico</li>
+                                <li>Madre</li>
+                                <li>El tesoro acústico</li>                           
+                            </ol>
+                        </div>
+                        <img src="img/productos/laotra-min.jpg" alt="casete La otra dimensión" class="img-fluid">
+                    </div>                
+                    <p class="descripcion">Casete · La otra dimensión · 2019 </p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="cd">   
+                    <div class="caja-cd">
+                        <div class="caja4" id="ahoraImagino">
+                            <ol>
+                                <li>Ahora imagino cosas</li>
+                                <li>La casa fantasmal</li>
+                                <li>El tesoro - acústico</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/ahoraimagino.png" alt="cd Ahora imagino cosas" class="img-fluid">
+                    </div>             
+                    <p class="descripcion">CD simple · Ahora imagino cosas · 2017</p>
+                    <p class="precio">AR$350</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>           
+                <article class="vinilo"> 
+                    <div class="caja-cd">
+                        <div>
+                            <p>LADO A</p>
+                            <ol>
+                                <li>El tesoro</li>
+                                <li>Ahora imagino cosas</li>
+                                <li>La noche eterna</li>
+                                <li>Alguien que lo merece</li>
+                                <li>Las luces</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>La síntesis O'Konor</li>
+                                <li>Destrucción</li>
+                                <li>Excálibur</li>
+                                <li>El mundo extraño</li>
+                                <li>Fuego</li>
+                            </ol>                  
+                        </div>
+                        <img src="img/productos/lasintesis.png" alt="Vinilo La síntesis O'Konnor" class="img-fluid">
+                    </div>           
+                    <p class="descripcion">Vinilo · La síntesis O'Konnor · 2017</p>
+                    <p class="precio">AR$1200</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="casete"> 
+                    <div class="caja-cd">
+                        <div>
+                            <p>LADO A</p>
+                            <ol>
+                                <li>El tesoro</li>
+                                <li>Ahora imagino cosas</li>
+                                <li>La noche eterna</li>
+                                <li>Alguien que lo merece</li>
+                                <li>Las luces</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>La síntesis O'Konor</li>
+                                <li>Destrucción</li>
+                                <li>Excálibur</li>
+                                <li>El mundo extraño</li>
+                                <li>Fuego</li>
+                            </ol>     
+                        </div>
+                        <img src="img/productos/lasintesis.png" alt="Casete La síntesis O'Konnor" class="img-fluid">
+                    </div>             
+                    <p class="descripcion">Casete · La síntesis O'Konnor · 2017</p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="cd"> 
+                    <div class="caja-cd">
+                        <div>
+                            <ol>
+                                <li>El tesoro</li>
+                                <li>Ahora imagino cosas</li>
+                                <li>La noche eterna</li>
+                                <li>Alguien que lo merece</li>
+                                <li>Las luces</li>              
+                                <li>La síntesis O'Konor</li>
+                                <li>Destrucción</li>
+                                <li>Excálibur</li>
+                                <li>El mundo extraño</li>
+                                <li>Fuego</li>
+                            </ol>     
+                        </div>
+                        <img src="img/productos/lasintesis.png" alt="cd La síntesis O'Konnor" class="img-fluid">
+                    </div>              
+                    <p class="descripcion">CD · La síntesis O'Konnor · 2017</p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="vinilo">
+                    <div class="caja-cd">
+                        <div class="caja4">
+                            <p>LADO A</p>
+                            <ol>
+                                <li>El tesoro</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>Madre</li>
+                                <li>Postales negras</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/eltesoro.png" alt="Vinilo El tesoro" class="img-fluid">
+                    </div>               
+                    <p class="descripcion">Vinilo · El tesoro · 2017</p>
+                    <p class="precio">AR$1200</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>            
+                <article class="casete">
+                    <div class="caja-cd">
+                        <div>
+                            <p>LADO A</p>
+                            <ol>
+                                <li>El tesoro</li>
+                            </ol>
+                            <p>LADO B</p>
+                            <ol>
+                                <li>Madre</li>
+                                <li>Postales negras</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/eltesoro.png" alt="Casete El tesoro" class="img-fluid">
+                    </div>               
+                    <p class="descripcion">Casete · El tesoro · 2017</p>
+                    <p class="precio">AR$600</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="cd">
+                    <div class="caja-cd">
+                        <div id="cdElTesoro" class="">
+                            <ol>
+                                <li>El tesoro</li>
+                                <li>Madre</li>
+                                <li>Postales negras</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/eltesoro.png" alt="cd El tesoro" class="img-fluid">
+                    </div>               
+                    <p class="descripcion">CD · El tesoro · 2017</p>
+                    <p class="precio">AR$600</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="casete"> 
+                    <div class="caja-cd">
+                        <div id="caseteDinastia" class="">
+                            <ol>
+                                <li>El magnetismo</li>
+                                <li>Mujeres bellas y fuertes</li>
+                                <li>Chica de oro</li>
+                                <li>Mas o menos bien</li>
+                                <li>Yoni B</li>
+                                <li>Terror</li>
+                                <li>Nuevos discos</li>
+                                <li>La cobra</li>
+                                <li>Noche negra</li>
+                                <li> La cara en el asfalto</li>
+                                <li> El fuego que hemos construido</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/ladinastia-min.jpg" alt="Casete La Dinastía Scorpio" class="img-fluid">
+                    </div>              
+                     <p class="descripcion">Casete · La Dinastía Scorpio · 2012</p>
+                    <p class="precio">AR$500</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>
+                <article class="cd">  
+                    <div class="caja-cd">
+                        <div class="caja4"  id="laDinastia">
+                            <ol>
+                                <li>El magnetismo</li>
+                                <li>Mujeres bellas y fuertes</li>
+                                <li>Chica de oro</li>
+                                <li>Mas o menos bien</li>
+                                <li>Yoni B</li>
+                                <li>Terror</li>
+                                <li>Nuevos discos</li>
+                                <li>La cobra</li>
+                                <li>Noche negra</li>
+                                <li> La cara en el asfalto</li>
+                                <li> El fuego que hemos construido</li>
+                            </ol>
+                        </div>
+                        <img src="img/productos/ladinastia-min.jpg" alt="cd La Dinastía Scorpio" class="img-fluid">
+                    </div>             
+                    <p class="descripcion">CD · La Dinastía Scorpio · 2012</p>
+                    <p class="precio">AR$900</p>
+                    <button class="boton">AGREGAR<i class="fas fa-cart-plus"></i></button>
+                </article>           
+        </section>
+    </main>
+    <hr>
+    <footer class="footer-tienda pb-4 container pt-4">
+        <div class="row">
+            <div class="col-12">
+                <h4>MÉTODOS DE PAGO</h4>
+                <ul>
+                    <li><i class="fab fa-cc-mastercard"></i></li>
+                    <li><i class="fab fa-cc-visa"></i></li>
+                    <li><i class="fab fa-cc-paypal"></i></li>
+                    <li><i class="fab fa-cc-amex"></i></li>
+                </ul>        
+                <h4 class="mt-2">ENTERATE DE LAS ÚLTIMAS NOVEDADES DE LA TIENDA OFICIAL EL MATÓ</h4>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Ingresá tu email" required>
+                    <button type="submit" class="boton">SUSCRIBIRSE</button>
+                </form>
+            </div> 
+        </div>       
+    </footer>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
